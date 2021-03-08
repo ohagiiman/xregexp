@@ -30,7 +30,7 @@
     "build": "browserify lib/index.js --standalone XRegExp > xregexp-all.js",
     "pretest": "npm run build",
     "test-saucelabs": "npm run pretest && zuul tests/spec/*.js",
-    "test-browser": "npm run test-saucelabs -- --local --open",
+    "test-browser": "npm run test-saucelabs -- --local --open"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
